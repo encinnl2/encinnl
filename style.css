@@ -1,0 +1,232 @@
+/* universal */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+        url("/font/ka.woff") format("woff"),
+        url("/font/ka.woff") format("woff2");
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    font-size: 15px;
+    justify-content: block;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    font-style: bold;
+    position: relative left;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+/* product */
+
+.product {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: 0.5s;
+}
+.product:hover {
+    box-shadow: 10px 10px 10px rgba(108, 92, 231, 0.3);
+    transform: translate(20px) skewY(1deg) skewX(1deg) scale(1);
+}
+
+/* product img */
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.product img:hover {
+    box-shadow: 0 10px 10px rgba(108, 92, 231, 0.3);
+    transform: rotateY(4deg) rotateX(4deg) skew(3deg) scale(0.95);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+/* product universal */
+
+.product h3 {
+    margin: 15px 0 5px;
+}
+
+.product p {
+    color: #bbb;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+#but {
+    text-shadow: 2px 10px 10px rgba(108, 92, 231, 1);
+}
+
+/* buy */
+
+.btn-buy {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+    background-color: #6c5ce7;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all color 0.5s ease;
+    text-transform: uppercase;
+}
+
+.btn-buy:hover {
+    background-color: #6c5ce7;
+    box-shadow: 0 10px 10px rgba(108, 92, 231, 0.5);
+    border: solid;
+    transition: all 0.5s ease;
+    color: white;
+    cursor: pointer;
+}
+
+/* logo */
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    background-image: linear-gradient(
+            to top right,
+            rgba(253, 121, 168, 0.3),
+            rgba(108, 92, 231, 0.4),
+            rgba(255, 20, 147, 0.3)
+        ),
+        url("/foto/clairo.jpg");
+    background-size: 50%;
+    border-radius: 5px;
+    background-repeat: repeat;
+    animation: g 3.5s ease infinite;
+    transition: 0.4s ease;
+    user-select: none;
+    display: block;
+    color: white;
+    font-style: arial, bold;
+}
+
+@keyframes g {
+    1% {
+        background-position: 30% 20%;
+    }
+    50% {
+        background-position: 70% 25%;
+    }
+    100% {
+        background-position: 20% 30%;
+    }
+}
+
+/* market */
+
+.market {
+    text-align: center;
+    padding: 20px;
+    color:#bbb;
+}
+
+/* nav kukjm */
+
+.nav {
+    text-align: right;
+    font-size: 15px;
+    white-space: nowrap;
+    gap: 1.5rem;
+}
+
+/* buat <a> */
+
+.buat {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    position: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#id {
+    color: #6c5ce7;
+    text-shadow: 0 10px 10px rgba(108, 92, 231, 0.9);
+}
+
+.buat:hover {
+    color: #6c5ce7;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* buat ig */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #6c5ce7;
+    transform: translateY(6px) rotateX(2deg) skewX(3deg) scale(1.04);
+    box-shadow: 0 10px 10px rgba(108, 92, 231, 0.3);
+    border: solid;
+    animation: smooth;
+}
