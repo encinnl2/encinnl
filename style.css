@@ -150,6 +150,11 @@ p {
     font-style: arial, bold;
 }
 
+#lg{
+    position: right;
+    text-align: right;
+}
+
 .logo:hover{
     color: #6c5ce7;
     text-transform: uppercase 2s ease;
